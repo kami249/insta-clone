@@ -3,6 +3,7 @@
     box-sizing: border-box;
     color: white;
     background-color: #111111;
+    font-family: sans-serif;
 }
 /* Style for the three divs */
 .container {
@@ -28,6 +29,8 @@
     display: flex;
     flex-direction: column; /* Create a column structure */
     padding-left: 25px;
+    border-right: 0.5px solid grey;
+    position: fixed;
     
 }
 #logo{
@@ -41,7 +44,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     margin-right: 25px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .daughter-div1 {
@@ -55,21 +58,136 @@
     border-radius: 5px; /* Add border radius on hover */
   }
   
-  .daughter-div1:active {
-    background-color: #a3a1a1; /* Background color when clicked (even darker gray) */
-  }
   .daughter-div1 i{
     margin-right: 15px;
     font-size: 20px;
+    background-color: transparent;
   }
 .div2 {
-    width: 60vw;
-    background-color: #00ff00; /* Green */
-    height: 100px; /* Adjust the height as needed */
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+    width: 45vw;
+    margin-left: 26vw;
+}
+.story{
+    width: 40vw;
+    display: flex;
+    margin-bottom: 30px;
+}
+.story1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 11px;
+}
+.childDiv2 {
+    display: inline-block;
+    width: 53px; /* Adjust the width of each child div as needed */
+    height: 53px;
+    margin: 10px;
+    border-width: 2px; 
+    border-style: solid ;  
+    /*border-image: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #56cfe1, #2af598);*/
+    border: 2px solid #f04a25;
+    border-radius: 50%; 
+}
+.posts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.poster {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content to the top of the div */
+    padding: 10px;
+    max-height: 60vh;
+}
+
+.con {
+    width: 48%; /* Adjust the width as needed to leave space between divs */
+    padding: 10px;
+}
+.con i{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.imagecont {
+    width: 45vw; /* Adjust the width as needed */
+    height: auto; /* Set the height to match the image or a specific value */
+    overflow: hidden; /* Hide any content that overflows the container */
+}
+
+.image {
+    width: 100%; /* Ensure the image spans the width of the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+.likes{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+}
+.likes i{
+    padding-right: 8px;
+}
+.fvrt{
+    padding-bottom: 10px;
+}
+.comment{
+    width: 400vw;
 }
 
 .div3 {
+    margin-top: 50px;
     width: 23vw;
-    background-color: #0000ff; /* Blue */
-    height: 100px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 75vw;
+
+}
+
+.childDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-right: 50px;
+}
+.childDiv .profile, .poster .profile{
+    display: flex;
+    justify-content: flex-start;
+}
+.childDiv i, .profile i{
+    font-size: 40px;
+    padding-right: 15px;
+}
+
+.childDiv .profile .profile-name, .poster .profile .profile-name {
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.childDiv .profile .profile-name .username, .poster .profile .profile-name .username {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.follow{
+    color: blue;
+}
+#suggestion{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#see-all:hover{
+    color: rgb(26, 104, 172);
 }
